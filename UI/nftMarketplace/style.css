@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #cfe9ff;
+}
+.dsp-none{
+    display: none;
+}
+.header{
+    background-color: #f0f8ff;
+}
+.header .level0{
+    text-align: center;
+    margin: 0;
+    padding: 10px 0px;
+}
+.level0 img{
+    height: 40px;
+    width: auto;
+}
+.header .level1{
+    display: flex;
+    flex-direction: row;
+    background-color: #e3effa;
+    padding: 5px;
+}
+.level1 .header-options-list{
+    width: 95%;
+    display: flex;
+    padding-left: 15px;
+}
+.level1 .header-option{
+    width: 8%;
+    margin: 15px 10px 0px 10px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.level1 .profile{
+    display: flex;
+    width: 10%;
+    justify-content: end;
+    padding-right: 10px;
+}
+.level1 .profile-img img{
+    height: 40px;
+    width: auto;
+}
+.profile .dropdowm{
+    border: 0.5px solid;
+    border-radius: 11px;
+    padding: 10px 25px;
+    background: #d2e0f7;
+    box-shadow: 0px 0px 16px -1px #888888;
+}
+.nft-trending{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.nft-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 35px;
+    box-shadow: 0px 5px 10px 8px #31638c;
+    width: 20%;
+    justify-content: center;
+    margin: 25px;
+    padding: 20px;
+}
+.nft-card .nft-img{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.nft-img img{
+    width: 50%;
+    height: auto;
+}
+.nft-card .title{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.nft-card .data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.data .text{
+    font-size: 16px;
+    font-weight: 600;
+    color: #3e4952;
+}
+.data .value{
+    font-size: 16px;
+    color: #3e4952;
+}
+.nft-card .buy-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+.buy-button .button{
+    border: 0.5px solid;
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #a0d1fa;
+    box-shadow: 0px 0px 16px -1px #888888;
+    cursor: pointer;
+}

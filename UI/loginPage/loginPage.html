@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="sub-container">
+                <div class="description-section">
+                    <img src="assets/MEDLIXR.png">
+                </div>
+                <div class="login-section">
+                    <h2>Login</h2>
+                    <div class="option-bar">
+                        <p onclick= "loginType(this)" class="option selected">Patient login</p>
+                        <p onclick= "loginType(this)" class="option">Doctor login</p>
+                        <p onclick= "loginType(this)" class="option">Organisation login</p>
+                    </div>
+                    <form class="input-field">
+                        <div class="field">
+                            <input class="input-data" type="text" id="e-mail" name="password" placeholder=" ">
+                            <label for="e-mail">E-mail</label>
+                        </div>
+                        <div class="field signup dsp-none">
+                            <input class="input-data" type="text" id="mobile" name="mobile" placeholder=" ">
+                            <label for="mobile">Mobile</label>
+                        </div>
+                        <div class="field signup dsp-none">
+                            <input class="input-data" type="text" id="userName" name="userName" placeholder=" ">
+                            <label for="userName">Name</label>
+                        </div>
+                        <div class="field">
+                            <input class="input-data" type="password" id="password" name="password" placeholder=" ">
+                            <label for="password">Password</label>
+                        </div>
+                    </form>
+                    <div class="button">
+                        <span class="login" onclick="login()">Log in</span>
+                    </div>
+                    <p class="sign-up">New user?<span onclick="registration(this)" class="sign-up-button">Sign up</span></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

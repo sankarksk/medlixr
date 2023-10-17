@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="level0">
+                <img src="assets/MEDLIXR-text.png" alt="logo">
+            </div>
+            <div class="level1">
+                <div class="header-options-list"> 
+                    <a href="../contributors/contributors.html" class="header-option">Contributors</a>
+                    <a href="../aboutUs/aboutUs.html" class="header-option">About us</a>
+                </div>
+                <div class="profile">
+                    <span onclick="logout1(this)" class="profile-img">
+                        <img src="assets/loginUser.png" alt="userImage">
+                    </span>
+                    <span onclick="logout2(this)" class="dropdowm dsp-none">
+                        <div>Logout</div>
+                    </span>
+                </div>   
+            </div>
+        </div>
+        <div class="container">
+            <div class="bio-data">
+                <div class="title"> Bio data </div>
+                <div class="dataset">
+                    <div class="data">
+                        <span class="label">First Name</span>
+                        <span class="field-data" id="fname">Joseph</span>
+                    </div>
+                    <div class="data">
+                        <span class="label">Last Name</span>
+                        <span class="field-data" id="lname">Jesus</span>
+                    </div>
+                    <div class="data">
+                        <span class="label">Age</span>
+                        <span class="field-data" id="age">23</span>
+                    </div>
+                    <div class="data">
+                        <span class="label">Blood group</span>
+                        <span class="field-data" id="bloodGroup">A+</span>
+                    </div>
+                    <div class="data">
+                        <span class="label">Last Updation Date</span>
+                        <span class="field-data" id="updationDate">24 Sept 2023</span>
+                    </div>
+                    <div class="data">
+                        <span class="label">Number of Report</span>
+                        <span class="field-data" id="reportNumber">7</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reports">
+                <div class="title"> Reports </div>
+                <div class="dataset">
+                    <div class="data">
+                        <label class="label" for="reportRelates">Report related to</label>
+                        <input class="field-data" type="Text" id="reportRelates" name="reportRelates">
+                    </div>
+                    <div class="data">
+                        <label class="label" for="startDate">Analyse report from</label>
+                        <input class="field-data" type="Text" id="startDate" name="startDate">
+                    </div>
+                    <div class="data search-button">
+                        <span onclick="generateReport(this)" class="search">Generate report</span>
+                    </div>
+                    <p class="warning dsp-none">Kindly fill the all details</p>
+                </div>
+                <div class="results dsp-none">
+                    <div class="option-bar">
+                        <span onclick="reportType(this)" class="options selected">AI generated report</span>
+                        <span onclick="reportType(this)" class="options">Doctors report</span>
+                    </div>
+                    <div class="ai-report">
+                        <div class="report-text">
+                            <span class="title"> Report Description </span>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <span class="title"> Medicine Precription </span>
+                            <div class="med-table">
+                                <table>
+                                    <tr>
+                                        <th>S.No</th>
+                                        <th>Medicine</th>
+                                        <th>Frequency</th>
+                                        <th>Duration</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Dolo 650</td>
+                                        <td>1-1-1</td>
+                                        <td>5 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Emanzen</td>
+                                        <td>1-0-1</td>
+                                        <td>2 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Crocin</td>
+                                        <td>1-0-1</td>
+                                        <td>3 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Cetrizine</td>
+                                        <td>1-0-1</td>
+                                        <td>1 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Vibact</td>
+                                        <td>once per day</td>
+                                        <td>as per need</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <p class="warning"> Medicines to be administerd with approval of doctors. This AI is not a proffesional doctor and is not responsible for any harm.</p>
+                            <span class="title"> Suggested Precautions </span>
+                            <ul>
+                                <li>Drink hot water regularly</li>
+                                <li>Avoid cold food</li>
+                                <li>Take meds on time</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="doctor-report dsp-none">
+                        <span class="title"> Reports by your doctor </span>
+                        <div class="med-table">
+                            <table>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Doctor</th>
+                                    <th>Doctor Analysis</th>
+                                    <th class="download">Download</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Dr. Reddy</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+                                    <td onclick="viewDownload(this)" class="download">View & Download</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Dr. Reddy</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+                                    <td onclick="viewDownload(this)" class="download">View & Download</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Dr. Reddy</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+                                    <td onclick="viewDownload(this)" class="download">View & Download</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Dr. Reddy</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+                                    <td onclick="viewDownload(this)" class="download">View & Download</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Dr.Reddy</td>
+                                    <td>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</td>
+                                    <td onclick="viewDownload(this)" class="download">View & Download</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nft-data">
+                <div class="title"> NFT consent form </div>
+                <p class="description">A non-fungible token is a unique digital identifier that is recorded on a blockchain, and is used to certify ownership and authenticity. It cannot be copied, substituted, or subdivided. The ownership of an NFT is recorded in the blockchain and can be transferred by the owner, allowing NFTs to be sold and traded.</p>
+                <div class="consent-button">
+                    <span onclick="consentForm(this)" class="button"> I consent</span>
+                </div>
+                <div class="data-collection dsp-none">
+                    <div class="med-table">
+                        <table>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Data type</th>
+                                <th>Description</th>
+                                <th>Consent</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>First name</td>
+                                <td>Joseph</td>
+                                <td class="align"><input type="checkbox" id="data1" value="consent"></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Last name</td>
+                                <td>J</td>
+                                <td class="align"><input type="checkbox" id="data2" value="consent"></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Date of birth</td>
+                                <td>21/12/1992</td>
+                                <td class="align"><input type="checkbox" id="data3" value="consent"></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>General address</td>
+                                <td>Udupi, Karnataka</td>
+                                <td class="align"><input type="checkbox" id="data4" value="consent"></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Total number of visits per hospital</td>
+                                <td>1</td>
+                                <td class="align"><input type="checkbox" id="data5" value="consent"></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Diagnosis report</td>
+                                <td>Cardio report on 12/02/2023</td>
+                                <td class="align"><input type="checkbox" id="data6" value="consent"></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Medical prescription</td>
+                                <td>Pharmacy data on 12/02/2023</td>
+                                <td class="align"><input type="checkbox" id="data7" value="consent"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="consent-button dsp-none">
+                    <span onclick="dataCollection(this)" class="button">I consent </span>
+                </div>
+                <p class="thankyou-msg dsp-none"> Your data will be used for better Medical services. Thank you for you contribution</p>
+            </div>
+        </div>
+    </body>
+</html>

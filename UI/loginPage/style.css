@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/backgroundImage.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.container .sub-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 20%;
+}
+.sub-container .description-section{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.login-section{
+    display: block;
+    padding: 20px;
+    box-shadow: 0px 5px 10px 8px #888888;
+    margin-right: 3.5%;
+}
+.login-section h2{
+    text-align: center;
+    font-size: 30px;
+    padding: 12px 0px;
+    margin: 0px;
+}
+.login-section .button{
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 20px 0px;
+    cursor: pointer;
+}
+.login-section .button .login{
+    padding: 1.2% 6%;
+    background: white;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.login-section .sign-up{
+    text-align: center;
+    margin: 0;
+}
+.sign-up .sign-up-button{
+    padding-left: 1%;
+    cursor: pointer;
+    color: blue;
+}
+.option-bar{
+    display: flex;
+    border-radius: 50px;
+    background-color: aliceblue;
+    margin: 5% 0%;
+}
+.option-bar .option{
+    padding: 10px 64px;
+    margin: 0px;
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.option.selected{
+    background-color: white;
+}
+.login-section .input-field{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 25%;
+}
+.input-field .field{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.input-field .field label{
+    padding: 10px;
+    position: absolute;;
+}
+.input-field .field input{
+    padding: 10px;
+    border-radius: 25px;
+    border: 0.5px solid;
+}
+.input-data:focus + label,
+.input-data:not(:placeholder-shown) + label{
+    display: none;
+}
+.container .sub-container .dsp-none{
+    display: none;
+}

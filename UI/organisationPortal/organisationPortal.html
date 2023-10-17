@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="level0">
+                <img src="assets/MEDLIXR-text.png" alt="logo">
+            </div>
+            <div class="level1">
+                <div class="header-options-list"> 
+                    <a href="../nftMarketplace/nftMarketplace.html" class="header-option">NFT market place</a>
+                    <a href="../contributors/contributors.html" class="header-option">Contributors</a>
+                    <a href="../aboutUs/aboutUs.html" class="header-option">About us</a>
+                </div>
+                <div class="profile">
+                    <span onclick="logout1(this)" class="profile-img">
+                        <img src="assets/loginUser.png" alt="userImage">
+                    </span>
+                    <span onclick="logout2(this)" class="dropdowm dsp-none">
+                        <div>Logout</div>
+                    </span>
+                </div>   
+            </div>
+        </div>
+        <div class="container">
+            <div class="paragragh"> Kindly verify details before uploading </div>
+            <div class="sub-container">
+                <div class="left-side-container">
+                    <div class="patient-search">
+                        <div class="dataset">
+                            <label class="detail-label" for="VUserName">Patient Name</label>
+                            <input class="detail-data" type="Text" id="VUserName" name="VUserName">
+                        </div>
+                        <div class="dataset">
+                            <label class="detail-label" for="VUserId">Patient Unique Id</label>
+                            <input class="detail-data" type="Text" id="VUserId" name="VUserId">
+                        </div>
+                        <div class="search-button">
+                            <span onclick="verify(this)" class="search">Verify</span>
+                        </div>
+                        <p class="dsp-none">Kindly fill the all details</p>
+                    </div>
+                    <div class="patient-img dsp-none">
+                        <img src="assets/patientImg.jpeg" alt="photo">
+                    </div>
+                    <div class="patient-details dsp-none">
+                        <div class="dataset">
+                            <div class="detail-label">First Name</div>
+                            <div class="detail-data"> Joseph </div>
+                        </div>
+                        <div class="dataset">
+                            <div class="detail-label">Last Name</div>
+                            <div class="detail-data"> Jesus </div>
+                        </div>
+                        <div class="dataset">
+                            <div class="detail-label">Blood Type</div>
+                            <div class="detail-data"> A+ </div>
+                        </div>
+                        <div class="dataset">
+                            <div class="detail-label">Email address</div>
+                            <div class="detail-data"> Joseph@gmail.com </div>
+                        </div>
+                        <div class="dataset">
+                            <div class="detail-label">Address</div>
+                            <div class="detail-data"> 301, Emerald, Pune, Maharashtra, India </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side-container">
+                    <div class="upload-title"> Details to upload </div>
+                    <form class="form-data">
+                        <div class="form-field">
+                            <label for="userName">Patient Name</label>
+                            <input class="field-data" type="Text" id="userName" name="userName">
+                        </div>
+                        <div class="form-field">
+                            <label for="userId">Patient Unique Id</label>
+                            <input class="field-data" type="Text" id="userId" name="userId">
+                        </div>
+                        <div class="form-field">
+                            <label for="mobileNumber">Patient Mobile Number</label>
+                            <input class="field-data" type="Number" id="mobileNumber" name="mobileNumber">
+                        </div>
+                        <div class="form-field">
+                            <label for="description">Patient File Description</label>
+                            <input class="field-data" type="Text" id="description" name="description">
+                        </div>
+                        <div class="form-field">
+                            <label for="patientFile">Patient File</label>
+                            <input type="file" id="patientFile" name="patientFile">
+                        </div>
+                    </form>
+                    <div class="submit-button">
+                        <span onclick="submit(this)" class="submit">Upload</span>
+                    </div>
+                    <p class="dsp-none">Verify patients name and PUI to enable upload button</p>
+                </div>
+            </div>
+            <div class="confirmation dsp-none"> 
+                <div class="paragragh">Data has been uploaded</div>
+                <div class="submit-button">
+                    <span onclick="uploadNew()" class="submit">Upload another file</span>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
